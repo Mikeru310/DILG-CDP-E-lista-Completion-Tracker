@@ -15,3 +15,4 @@ if ($role === 'mlgoo' || $role === 'responder') {
 
 header('Location: /core/portal.php');
 exit;
+//this is no longer needed lmao
