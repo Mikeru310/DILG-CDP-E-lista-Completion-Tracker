@@ -1,0 +1,239 @@
+/* templates.css
+   Extra styles for templates.php
+   Uses your existing style.css for layout/sidebar/topbar/panel base
+*/
+
+/* ============================= */
+/* PAGE CONTAINER */
+/* ============================= */
+
+.page {
+  /* keep it readable on ultrawide monitors */
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Panels should feel like progress.php cards */
+.templatesPanel {
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+/* ============================= */
+/* HEADER AREA */
+/* ============================= */
+
+.templatesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.templatesTitle {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.templatesSub {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* Search */
+.templatesSearchWrap {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.templatesSearch {
+  width: 360px;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.14);
+  background: #fff;
+  outline: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.templatesSearch::placeholder {
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.templatesSearch:focus {
+  outline: 2px solid rgba(37,99,235,.22);
+  border-color: rgba(37,99,235,.35);
+}
+
+.templatesHint {
+  font-size: 12px;
+  opacity: .75;
+}
+
+/* ============================= */
+/* SECTION HEAD (CDP FORMS / REFS) */
+/* ============================= */
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-size: 25px;
+  font-weight: 900;
+  color:#1d4ed8;
+}
+
+.sectionMeta {
+  font-size: 12px;
+  opacity: .75;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* GRID + CARD (DENSITY FIX) */
+/* ============================= */
+
+/* Auto-fit grid: more files visible at 100% */
+.templateGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 12px;
+}
+
+/* Compact card */
+.templateCard {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 3px 10px rgba(0,0,0,.06);
+  padding: 10px 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Top row: badge + info */
+.templateTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* File type badge */
+.fileBadge {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: .3px;
+  min-width: 56px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+/* Info area */
+.fileInfo {
+  flex: 1 1 auto;
+  min-width: 0; /* needed for ellipsis */
+}
+
+.fileName {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.25;
+
+  /* single line */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileMeta {
+  margin-top: 2px;
+  font-size: 11px;
+  opacity: .75;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+/* Download button: smaller but still strong */
+.downloadBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+
+  font-weight: 900;
+  font-size: 12px;
+  text-decoration: none;
+
+  width: 100%;
+  transition: transform .05s ease, background .15s ease;
+}
+
+.downloadBtn:hover {
+  background: #1d4ed8;
+}
+
+.downloadBtn:active {
+  transform: translateY(1px);
+}
+
+/* Empty state */
+.emptyState {
+  padding: 14px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  border: 1px dashed rgba(0,0,0,.25);
+  color: #111827;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.emptyState code {
+  font-weight: 900;
+}
+
+/* ============================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ============================= */
+
+@media (max-width: 1200px) {
+  .templateGrid {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .templatesSearch {
+    width: 100%;
+  }
+
+  .templateGrid {
+    grid-template-columns: 1fr;
+  }
+}

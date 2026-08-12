@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FP Completion Tracker</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="FP_style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="filterWrap">
+      <button class="filterBtn" id="filterBtn">
+        <span class="left">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h10M18 7h2" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 12h6M14 12h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 17h14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Filter
+        </span>
+        <span id="caret">▼</span>
+      </button>
+
+      <div class="dropdown" id="dropdown">
+        <label>Municipality</label>
+        <select id="municipalitySelect"></select>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="panel">
+
+      <div class="overall" id="overallText">
+        Percentage of Overall Completion: <small>0.00%</small>
+      </div>
+
+      <div class="tableWrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Social</th>
+              <th>Economic</th>
+              <th>Infrastructure</th>
+              <th>Environmental</th>
+              <th>Individual</th>
+              <th>Completion %</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- JS -->
+<script src="FP_script.js"></script>
+</body>
+</html>

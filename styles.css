@@ -1,0 +1,320 @@
+:root{
+  --bg: #f3f3f3;
+  --card: #ffffff;
+  --text: #1b1b1b;
+  --btn: #4fb9d3;
+  --shadow: 0 10px 30px rgba(0,0,0,.10);
+  --radius: 18px;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ================= LOGIN LAYOUT ================= */
+
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 32px 16px;
+}
+
+.card{
+  width: min(1100px, 100%);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  display:grid;
+  grid-template-columns: 1fr 1.35fr;
+  min-height: 520px;
+}
+
+.left{
+  padding: 54px 48px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap: 14px;
+}
+
+.left h1{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.field input,
+.field select{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #d6d6d6;
+  color: #333;
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+}
+
+.field select{
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn{
+  border: none;
+  cursor: pointer;
+  background: var(--btn);
+  color: #000;
+  padding: 14px 18px;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 16px;
+  margin-top: 6px;
+  transition: .2s ease;
+}
+
+.btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.btn.secondary{
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+
+.hint{
+  margin: 6px 0 0;
+  font-size: 13px;
+  min-height: 18px;
+  color: #444;
+}
+
+.link-btn{
+  background: none;
+  border: none;
+  color: #4fb9d3;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: left;
+  padding: 0;
+  width: fit-content;
+}
+
+.link-btn:hover{
+  text-decoration: underline;
+}
+
+.hidden{
+  display:none !important;
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.right{
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= REVIEW MODAL ================= */
+
+.reviewOverlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  animation: fadeIn .2s ease;
+}
+
+.reviewDialog{
+  width: min(900px, 95%);
+  max-height: 90vh;
+  background:#fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+.reviewHeader{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 22px;
+  background:#f8fafc;
+  border-bottom:1px solid #e5e7eb;
+  font-weight:600;
+}
+
+.reviewHeader button{
+  border:none;
+  background:none;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.reviewBody{
+  padding:20px;
+  overflow-y:auto;
+}
+
+/* ===== Meta Section ===== */
+
+.reviewMeta{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.reviewFileName{
+  font-weight:600;
+  font-size:15px;
+}
+
+.reviewDates{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+.reviewDateLabel{
+  font-weight:700;
+  color:#374151;
+}
+
+.reviewDownloadBtn{
+  background:#111827;
+  color:#fff;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+  transition:.2s;
+}
+
+.reviewDownloadBtn:hover{
+  background:#1f2937;
+}
+
+/* ===== File Preview ===== */
+
+.reviewPreview{
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:20px;
+  background:#fafafa;
+  min-height:200px;
+}
+
+.reviewPdf{
+  width:100%;
+  height:500px;
+  border:none;
+}
+
+.reviewDocx{
+  font-size:14px;
+  line-height:1.6;
+}
+
+.reviewTxt{
+  white-space:pre-wrap;
+  font-family:monospace;
+  font-size:13px;
+}
+
+.reviewNoFile{
+  text-align:center;
+  padding:40px;
+  color:#6b7280;
+}
+
+/* ===== Encoder Remarks (IMPROVED) ===== */
+
+.reviewRemarksWrap{
+  margin-top:10px;
+}
+
+.reviewRemarksTitle{
+  font-weight:800;
+  font-size:14px;
+  margin-bottom:10px;
+  color:#374151;
+  letter-spacing:.3px;
+}
+
+.reviewRemarksBody{
+  padding:18px 20px;
+  border:2px solid #cbd5e1;
+  border-left:6px solid #4fb9d3;   /* accent highlight */
+  border-radius:14px;
+  background:#f8fafc;
+  font-size:15px;
+  line-height:1.7;
+  white-space:pre-wrap;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+  color:#111;
+
+  min-height:160px;        /* taller */
+  max-height:320px;        /* prevent huge stretch */
+  overflow-y:auto;         /* scroll if long */
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.05);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+  from{ opacity:0 }
+  to{ opacity:1 }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px){
+  .card{
+    grid-template-columns: 1fr;
+  }
+  .right{
+    height: 260px;
+  }
+  .left{
+    padding: 34px 22px;
+  }
+  .reviewPdf{
+    height:350px;
+  }
+}

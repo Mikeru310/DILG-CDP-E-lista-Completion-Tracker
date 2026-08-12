@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview Progress of Completion</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+
+  <!-- MUNICIPALITY SELECT -->
+  <div class="panel municipality-panel">
+    <button id="municipalityBtn" class="mainBtn">Select Municipality</button>
+
+    <div id="municipalityList" class="municipality-list hidden">
+      <button class="municipality-item">Deez Nutz</button>
+      <button class="municipality-item">Kalibo</button>
+      <button class="municipality-item">Banga</button>
+      <button class="municipality-item">Numancia</button>
+      <button class="municipality-item">Lezo</button>
+      <button class="municipality-item">Makato</button>
+    </div>
+
+    <p id="selectedMunicipality" class="selected-text"></p>
+  </div>
+
+  <!-- TOP -->
+  <div class="top">
+    <div class="panel">
+      <div class="title">Overview Progress of Completion</div>
+      <div class="pieWrap">
+        <div class="pie"></div>
+      </div>
+    </div>
+
+    <div class="panel percentBox">
+      <div class="center">
+        <div class="percent" id="overallPercent">0%</div>
+        <div class="percentLabel">Percentage of Completion</div>
+        <div class="smallNote" id="overallNote">0 of 100 uploads</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <div id="stepsContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
