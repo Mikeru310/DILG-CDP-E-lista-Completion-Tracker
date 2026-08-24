@@ -71,7 +71,7 @@ across all required CDP components.​
 
 ## Source Code
 
-The application source code is located in the [`source-code`](./source-code) folder.
+The application source code is located in the [`ProjectFolders`](./ProjectFolders) folder.
 
 ## Documentation
 
