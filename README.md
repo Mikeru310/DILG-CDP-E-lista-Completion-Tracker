@@ -8,13 +8,13 @@ It provides a structured, real-time view of each LGU's compliance status
 across all required CDP components.
 
 <!-- Screenshot 1 -->
-![Screenshot description here](assets/screenshot1.png)
+![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
+/Images/72538f77-8ec7-4820-ab77-1b1de272a169.jpg)
 
 <!-- Screenshot 2 -->
-![Screenshot description here](assets/screenshot2.png)
+![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
+/Images/72538f77-8ec7-4820-ab77-1b1de272a169.jpg)
 
-<!-- Screenshot 3 -->
-![Screenshot description here](assets/screenshot3.png)
 
 ## Objectives
 - Online checklist of CDP formulation requirements
@@ -23,13 +23,14 @@ across all required CDP components.
 - Automated status tracking per LGU
 
 <!-- Screenshot 1 -->
-![Screenshot description here](assets/screenshot4.png)
+![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
+/Images/Screenshot 2026-03-08 195048.png)
 
 <!-- Screenshot 2 -->
-![Screenshot description here](assets/screenshot5.png)
+![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
+/Images/Screenshot 2026-03-08 200444.png)
 
-<!-- Screenshot 3 -->
-![Screenshot description here](assets/screenshot6.png)
+
 
 ## Technologies Used
 - PHP
