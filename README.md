@@ -9,11 +9,11 @@ across all required CDP components.
 
 <!-- Screenshot 1 -->
 ![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
-/Images/72538f77-8ec7-4820-ab77-1b1de272a169.jpg)
+/Images/72538f77-8ec7-4820-ab77-1b1de272a169.png)
 
 <!-- Screenshot 2 -->
 ![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
-/Images/72538f77-8ec7-4820-ab77-1b1de272a169.jpg)
+/Images/72538f77-8ec7-4820-ab77-1b1de272a169.png)
 
 
 ## Objectives
@@ -24,11 +24,11 @@ across all required CDP components.
 
 <!-- Screenshot 1 -->
 ![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
-/Images/Screenshot 2026-03-08 195048.png)
+/Images/Screenshot 2026-03-08 195048.jpg)
 
 <!-- Screenshot 2 -->
 ![Screenshot description here](DILG-CDP-E-lista-Completion-Tracker
-/Images/Screenshot 2026-03-08 200444.png)
+/Images/Screenshot 2026-03-08 200444.jpg)
 
 
 
